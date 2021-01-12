@@ -1,0 +1,33 @@
+ALGORITHM probleme1solution2
+VAR
+      htab1 : HASH_TABLE<INTEGER,STRING>;
+      htab2 : HASH_TABLE<INTEGER,STRING>;
+       str : STRING[10];
+
+BEGIN
+      htab1 : HASH_TABLE<INTEGER,STRING>;
+      htab2 : HASH_TABLE<INTEGER,STRING>;
+
+   htab1.insert(3,"three");
+   htab1.insert(1,"one");
+   htab1.insert(7,"seven");
+   htab1.insert(9,"nine");
+   Write(htab1);
+
+   htab2.insert(2,"two");
+   htab2.insert(4,"four");
+   htab2.insert(1,"one");
+   htab2.insert(9,"nine");
+   htab2.insert(3,"three");
+   Write(htab2);
+
+j=0
+sum=0
+
+   FOR i FROM 0 TO str.length -1 STEP 1  DO
+    if (htab1[i]<>htab2[j])
+        write(htab1[i])
+        sum=sum+htab2[j]
+        j=j+1
+
+END

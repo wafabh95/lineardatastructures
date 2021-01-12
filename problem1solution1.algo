@@ -1,0 +1,33 @@
+ALGORITHM probleme1solution1
+VAR
+    tab1 :  ARRAY_OF INTEGER[5];
+    i : INTEGER;
+
+    tab2 :  ARRAY_OF INTEGER[5];
+    j : INTEGER;
+
+BEGIN
+    tab1:={3,1,7,9}
+    write('print Array:')
+
+    for i from 0 to 3 STEP 1 DO 
+        write(tab1[i])
+    END_For
+
+
+     tab2:={2,4,1,9,3}
+    write('print Array:')
+    
+    for j from 0 to 4 STEP 1 DO 
+        write(tab2[j])
+    END_For
+
+    i=0
+    sum=0
+
+    for j from 0 To 4 STEP 1 Do 
+     if (tab1[i]<>tab2[j])
+        write(tab1[i])
+        sum=sum+tab2[j]
+        i=i+1
+END
